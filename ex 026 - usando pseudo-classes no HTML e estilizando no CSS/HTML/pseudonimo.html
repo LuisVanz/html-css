@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usando Pseudo-classes</title>
+        <style>
+            div:hover{
+                color: purple;
+            }
+
+            div > p{
+                display: none;
+            }
+
+            div:hover > p {
+                display: block;
+                color: white;
+                background-color: red;
+            }
+
+            a {
+                color:aqua;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:visited {
+                color:black
+            }
+
+            a:hover{
+                color:darkslategray;
+                text-decoration: underline;
+            }
+
+            a:active{
+                color: yellow;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            alguma divisão qualquer
+            <p>parágrafo aqui</p>
+        </div>
+        <a href="https://quantoquevaicustar.com.br/ofertas-em-destaque/">Site do Quanto que Vai Custar de ofertas da semana de jogos digitais</a>
+    </body>
+</html>

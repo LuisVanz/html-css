@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas em HTML</title>
+</head>
+
+<body>
+    <picture>
+        <source media="(max-width: 350px)" srcset="/IMAGE/cidade.jpg">
+        <source media="(max-width: 750px)" srcset="/IMAGE/montanha.jpg">
+        <source media="(max-width: 1050px)" srcset="/IMAGE/nevada.jpg">
+        <img src="/IMAGE/nevada.jpg" alt="Cidade vista de cima">
+    </picture>
+</body>
+
+</html>
