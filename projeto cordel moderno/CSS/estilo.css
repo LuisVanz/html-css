@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* setando o padrão de codificação UTF-8 */
+
+
+/* Importando a fonte Sriracha */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+/* Importando a fonte Passion One */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+/* raiz do projeto */
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* fonte padrao */
+    --fonte2:  'Passion One', cursive; /* usar em titulos */
+    --fonte3: 'Sriracha', cursive; /* usar para conteudos */
+}
+
+/* Configurações gerais*/
+* {
+    margin: 0px; /* todo o site não vai ter margem */
+    padding: 0px; /* todo o site não vai ter espaço(preenchimento) */
+}
+
+
+/* Configuração do html e body */
+html, body{
+    min-height: 100vh; /* tamanho minimo do corpo do site vai ser 100 view height */
+    background-color: darkgray; /* cor de fundo cinza escuro */
+    font-family: var(--fonte1); /* fonte padrao */
+}
+
+/* Cabeçalho */
+header {
+    background-color: black; /* cor de fundo do cabeçalho*/
+    color: white; /* cor das letras do cabeçalho*/
+    text-align: center; /* alinhar o texto no centro*/
+}
+
+/* No cabeçalho tem um h1 */
+header > h1 {
+    padding-top: 50px; /* dar um espaço em cima */
+    font-variant: small-caps; /* tamanho das primeiras letras maisculas e o resto minusculo */
+    font-family: var(--fonte2); /* fonte usada em titulos*/
+    font-size: 10vw; /* aumentar em 10% da largura da viewport para funcionar tanto em PC como em dispositivo móveis*/
+}
+
+/* No cabeçalho tem um paragráfo */
+header p {
+    padding-bottom: 50px; /* espaço para baixo */
+}
+
+/* Ancora(link) */
+a {
+    color: white; /* cor do link branco*/
+    text-decoration: none; /* sem sublinado no link */
+    font-weight: bolder; /* fonte ficar com negrito forte */
+}
+
+/* Link tem uma pseudo-classe hover(ao passar o mouse)*/
+a:hover {
+    text-decoration: underline; /* ter sublinhado no link*/
+}
+
+/* Seção*/
+section{
+    padding-top: 10vh; /* espaço em cima vh(view height - aumenta a altura da imagem ocupando mais espaço na tela */
+    padding-bottom: 10vh; /* espaço para baixo da view height */
+    line-height: 2em; /* aumentar espaço entre as palavras para não ficar grudado*/
+    padding-left: 30px; /* espaço a esquerda*/
+    font-family: var(--fonte3); /* fonte usada em conteudos */
+    font-size: 3.5vw;
+}
+
+/* Dentro da Seção tem o parágrafo*/
+section > p {
+    padding-bottom: 2em; /* espaço para baixo*/
+}
+
+/* A seção tem uma classe(.) com o nome normal */
+section.normal{
+    background-color: white; /* cor de fundo*/
+    color: black; /* cor das letras */
+}
+
+/* A seção tem uma classe(.) com o nome imagem */
+section.imagem{
+    background-color: rgb(51, 51, 51); /* cor de fundo */
+    color: white; /* cor das letras */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /* pra dentro(inset) deslocamento vertical/deslocamento horizontal/espalhamento/ampliação/cor  */
+    background-size: cover; /* para a imagem ficar certo na tela mesma que tenha que cortar um pouco a própria imagem*/
+    background-attachment: fixed; /* fixar a imagem */
+}
+
+/* A seção tem uma classe(.) com o nome imagem e dentro tem um parágrafo */
+section.imagem > p {
+   display: inline-block; /* para criar um bloco do mesmo tamanho que o conteudo ficando em linha */
+   padding: 5px; /* espaçamento */
+    background-color: rgba(0, 0, 0, 0.514); /* cor de fundo */
+    text-shadow: 1px 1px 0px black; /* sombra no texto - deslocamento horizontal/deslocamento vertical/espalhamento/cor */
+}
+
+/* A seção tem um id(#) com o nome img01 */
+section#img01 {
+    background-image: url('../imagens/background001.jpg'); /* colocando a imagem1 */
+    background-position: right center; /* ajustando a posição da imagem a direita no centro */
+}
+
+/* A seção tem um id(#) com o nome img02 */
+section#img02{
+    background-image: url('../imagens/background002.jpg'); /* colocando a imagem2 */
+}
+
+/* Rodapé */
+footer {
+    background-color: black; /* cor de fundo */
+    padding: 10px; /* espaçamento*/
+    text-align: center; /* alinhar o texto no centro */
+    color: white; /* cor das letras */
+}
