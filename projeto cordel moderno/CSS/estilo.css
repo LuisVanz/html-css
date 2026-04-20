@@ -27,7 +27,6 @@
 /* Configuração do html e body */
 html, body{
     min-height: 100vh; /* tamanho minimo do corpo do site vai ser 100 view height */
-    background-color: darkgray; /* cor de fundo cinza escuro */
     font-family: var(--fonte1); /* fonte padrao */
 }
 
