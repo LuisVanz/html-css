@@ -11,9 +11,10 @@
         }
 
         table{
+            width: 200px;
+            height: 100px;
             border-collapse: collapse;
             padding: 10px;
-            text-align: center;
         }
 
         caption {
@@ -40,12 +41,14 @@
         </caption>
         <thead>
             <tr>
-                <th scope="col">Área</th>
-                <th scope="col">Disciplinas</th>
-                <th colspan="2" scope="col">Notas</th>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
                 <th scope="col">Nota 1</th>
                 <th scope="col">Nota 2</th>
-                <th scope="col">Média</th>
             </tr>
         </thead>
         <tbody>
@@ -75,7 +78,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row" style="background-color: darkgray; color: white;">Média de Exatas</th>
+                <th colspan="4" scope="row" style="background-color: darkgray; color: white; text-align: left;">Média de Exatas</th>
                 <td style="background-color: darkgray; color: white;">0.0</td>
             </tr>
             <tr>
@@ -92,7 +95,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row" style="background-color: darkgray; color: white;">Média de Humanas</th>
+                <th colspan="4" scope="row" style="background-color: darkgray; color: white; text-align: left;">Média de Humanas</th>
                 <td style="background-color: darkgray; color: white;">0.0</td>
             </tr>
         </tbody>
